@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalaryManagement</title>
+    <link rel="icon" type="image/x-icon" href="/images/calendar.png">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/employee-details.js"></script>
+</head>
+
+<body>
+  <nav id="navigation" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index">
+            <img src="../images/calendar.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            SalaryManagement
+        </a>
+        <div class="ms-3" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="users">Korisnici</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="log">Log</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout">Odjava</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+    <p id="error"></p>
+    <form id="userForm">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Ime</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Unesite ime">
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Prezime</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Unesite prezime">
+        </div>
+        <div class="mb-3">
+            <label for="username" class="form-label">Korisničko ime</label>
+            <input type="text" class="form-control" id="username" placeholder="Unesite korime">
+        </div>
+        <div class="mb-3">
+            <label for="txtPassword" class="form-label">Lozinka</label>
+            <input type="text" class="form-control" id="txtPassword" placeholder="Unesite lozinku">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Titula</label>
+            <select class="form-select" id="title">
+            </select>
+        </div>
+        Tranjanje ugovora
+        <div class="mb-3">
+            <label for="startDate" class="form-label">Početni datum</label>
+            <input type="date" id="startDate" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="endDate" class="form-label">Završni datum</label>
+            <input type="date" id="endDate" class="form-control" required>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button id="btnUpdate" type="button" class="btn btn-primary">Ažuriraj zaposlenika</button>
+        </div>
+</form>        
+</div>
+
+
+</body>
+</html>

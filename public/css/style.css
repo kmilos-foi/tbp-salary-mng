@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+}
+
+.bg-oldlace {
+	background-color: floralwhite;
+}
+
+#navigation {
+	background-color: wheat;
+}
+
+
+.table tbody tr {
+    cursor: pointer;
+}
